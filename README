@@ -1,6 +1,23 @@
 Installation:
 
-  git clone git://github.com/mten/dotvim.git ~/.vim
+  HTTP method
+  git clone https://github.com/MTen/dotvim.git ~/.vim
+  SSH method
+  git clone git@github.com:MTen/dotvim.git ~/.vim
 
 Create symlinks:
-  ln -s ~/dotfiles/vimrc ~/.vimrc
+  ln -s ~/.vim/vimrc ~/.vimrc
+
+Install pathogen.vim
+  mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+  curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+Install git submodules
+  git submodule init
+  git submodule update
+
+
+Adding new modules
+cd .vim/bundle
+git submodule add [github url] bundle/[submodule_dir]  #clones git repository to specified bundle directory
+ 

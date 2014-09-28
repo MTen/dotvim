@@ -1,3 +1,11 @@
+execute pathogen#infect()
+syntax on
+call pathogen#helptags()
+
+if has("autocmd")
+  filetype plugin indent on
+endif
+
 " If I run into E319 errors run: sudo apt-get install vim-gui-common
 "                                sudo apt-get install vim-runtime
 "                                
