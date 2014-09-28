@@ -124,3 +124,11 @@ set tabstop=2
 set nobackup
 set nowb
 set noswapfile
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Files, backups and undo
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Automatically opens NERDTree when vi is executed
+autocmd VimEnter * NERDTree
+" Automatically focuses on opened file
+autocmd VimEnter * wincmd p
